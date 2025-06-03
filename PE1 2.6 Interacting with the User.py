@@ -1,3 +1,4 @@
+# Collects information from the user about their monthly expenses and budget
 housing = float(input("Enter your monthly rent or mortgage: "))
 utilities = float(input("Enter your monthly utilities bill: "))
 groceries = float(input("Enter your monthly groceries bill: "))
@@ -7,29 +8,32 @@ personal_Care = float(input("Enter your monthly personal care bill: "))
 clothing = float(input("Enter your monthly clothing bill: "))
 debt = float(input("Enter your monthly debt outside of what you've already listed: "))
 budget = float(input("Enter your monthly budget: "))
-#the above collects information from the user to use to provide them with the percent of each catagory to their budget
 
-housingPercent = housing / budget *100
-# divides housing amount by the budget 
-utilitiesPercent = utilities / budget *100
-# divides utilites amount by the budget
-groceriesPercent = groceries / budget *100
-# divides groceries amount by the budget
-transportPercent = transport / budget *100
-# divides transportation amount by the budget
-health_CarePercent = health_Care / budget *100
-# divides health care amount by the budget
-personal_CarePercent = personal_Care / budget *100
-# divides personal care amount by the budget
-clothingPercent = clothing / budget *100
-# divides clothing amount by the budget
-debtPercent = debt / budget *100
-# divides debt amount by the budget
+# Calculates the percentage of each expense category relative to the budget
+housingPercent = housing / budget * 100
+# Percentage of housing cost
+utilitiesPercent = utilities / budget * 100
+# Percentage of utilities cost
+groceriesPercent = groceries / budget * 100
+# Percentage of groceries cost
+transportPercent = transport / budget * 100
+# Percentage of transportation cost
+health_CarePercent = health_Care / budget * 100
+# Percentage of health care cost
+personal_CarePercent = personal_Care / budget * 100
+# Percentage of personal care cost
+clothingPercent = clothing / budget * 100
+# Percentage of clothing cost
+debtPercent = debt / budget * 100
+# Percentage of additional debt
+
+# Calculates the total monthly expenses and the remaining budget
 grandDebtTotal = housing + utilities + groceries + transport + health_Care + personal_Care + clothing + debt
-# adds all the monthly bills together for the total monthly debt
+# Total monthly expenses
 grandTotal = budget - grandDebtTotal
-#subtracts the budget from the monthly debt to get the remaining amount of money for the month
+# Remaining budget after expenses
 
+# Displays the results to the user
 print(f"The percentage of your rent or mortgage to your monthly budget is {housingPercent:.2f}%")
 print(f"The percentage of your Utilities Bills to your monthly budget is {utilitiesPercent:.2f}%")
 print(f"The percentage of your Groceries Bills to your monthly budget is {groceriesPercent:.2f}%")
@@ -40,4 +44,3 @@ print(f"The percentage of your Clothing Bills to your monthly budget is {clothin
 print(f"The percentage of your Debt to your monthly budget is {debtPercent:.2f}%")
 print(f"The total amount of money spent for the month is {grandDebtTotal:.2f} dollars")
 print(f"The total amount of money you have left for the month is {grandTotal:.2f} dollars")
-# displays the results ^^^^
