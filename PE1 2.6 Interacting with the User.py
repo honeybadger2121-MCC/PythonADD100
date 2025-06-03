@@ -36,7 +36,7 @@ print(f"The percentage of your Groceries Bills to your monthly budget is {grocer
 print(f"The percentage of your Transportation Bills to your monthly budget is {transportPercent:.2f}%")
 print(f"The percentage of your Health Care Bills to your monthly budget is {health_CarePercent:.2f}%")
 print(f"The percentage of your Personal Care Bills to your monthly budget is {personal_CarePercent:.2f}%")
-print(f"The percentage of your Clothing Bills to your monthly budget is clothingPercent:.2f}%")
+print(f"The percentage of your Clothing Bills to your monthly budget is {clothingPercent:.2f}%")
 print(f"The percentage of your Debt to your monthly budget is {debtPercent:.2f}%")
 print(f"The total amount of money spent for the month is {grandDebtTotal:.2f} dollars")
 print(f"The total amount of money you have left for the month is {grandTotal:.2f} dollars")
