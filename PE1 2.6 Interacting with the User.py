@@ -9,25 +9,25 @@ debt = float(input("Enter your monthly debt outside of what you've already liste
 budget = float(input("Enter your monthly budget: "))
 #the above collects information from the user to use to provide them with the percent of each catagory to their budget
 
-housingPercent = housing / Budget *100
+housingPercent = housing / budget *100
 # divides housing amount by the budget 
-utilitiesPercent = utilities / Budget *100
+utilitiesPercent = utilities / budget *100
 # divides utilites amount by the budget
-groceriesPercent = groceries / Budget *100
+groceriesPercent = groceries / budget *100
 # divides groceries amount by the budget
-transportPercent = transport / Budget *100
+transportPercent = transport / budget *100
 # divides transportation amount by the budget
-health_CarePercent = health_Care / Budget *100
+health_CarePercent = health_Care / budget *100
 # divides health care amount by the budget
-personal_CarePercent = personal_Care / Budget *100
+personal_CarePercent = personal_Care / budget *100
 # divides personal care amount by the budget
-clothingPercent = clothing / Budget *100
+clothingPercent = clothing / budget *100
 # divides clothing amount by the budget
-debtPercent = debt / Budget *100
+debtPercent = debt / budget *100
 # divides debt amount by the budget
 grandDebtTotal = housing + utilities + groceries + transport + health_Care + personal_Care + clothing + debt
 # adds all the monthly bills together for the total monthly debt
-grandTotal = Budget - grandDebtTotal
+grandTotal = budget - grandDebtTotal
 #subtracts the budget from the monthly debt to get the remaining amount of money for the month
 
 print(f"The percentage of your rent or mortgage to your monthly budget is {housingPercent:.2f}%")
