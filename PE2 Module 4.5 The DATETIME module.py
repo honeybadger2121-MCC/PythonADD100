@@ -61,3 +61,5 @@ def main():
 if __name__ == "__main__":
     main()
 # This script calculates the user's age based on their birthday input.
+# It uses the datetime module to handle date calculations and formatting.
+# The script prompts the user for their birth date, calculates the difference
